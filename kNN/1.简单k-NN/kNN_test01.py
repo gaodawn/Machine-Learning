@@ -2,6 +2,7 @@
 import numpy as np
 import operator
 import collections
+from cProfile import label
 
 """
 函数说明:创建数据集
@@ -51,6 +52,10 @@ def classify0(inx, dataset, labels, k):
 if __name__ == '__main__':
 	#创建数据集
 	group, labels = createDataSet()
+	print("group is:")
+	print(group)
+	print("labels:")
+	print(labels)
 	#测试集
 	test = [101,20]
 	#kNN分类
